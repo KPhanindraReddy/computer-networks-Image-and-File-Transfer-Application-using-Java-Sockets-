@@ -122,8 +122,6 @@ Thread.currentThread().sleep(500);
         new Client(); 
     } 
 } 
-OUTPUT: 
- 
 Thread.currentThread().sleep(500); 
 } catch (Exception e) { 
 System.out.println("Enter Valid File Name"); 
@@ -300,7 +298,7 @@ out.close();
  } catch (IOExceptionioe) { 
 System.out.println(""); 
 } 
-OUTPUT: 
+
 } 
 } 
 Explanation: 
@@ -311,14 +309,15 @@ In order to begin, the server program creates a ServerSocket that is listening o
 7860. It watches for connections from incoming clients. 
 In order to begin, the server program creates a ServerSocket that is listening on port 
 7860. It watches for connections from incoming clients.
+
  Step-2:Client Handling 
 For each incoming connection, a new thread (
  each incoming connection, a new thread (doComms)is created to handle 
 communication with the client.This allows the server to handle multiple clients 
 communication with the client.This allows the server to handle multiple clients 
 communication with the client.This allows the server to handle multiple clients 
-concurrently. 
-)is created to handle 
+concurrently. is created to handle 
+
 Step-3:Managing Communication
  Managing Communication 
 The Runnable interface is implemented by the doComms
@@ -330,6 +329,7 @@ uses the file extension to identify if the file is a text or picture file.
 uses the file extension to identify if the file is a text or picture file.
  communication with every client. After reading the filename that the client gave, it 
 uses the file extension to identify if the file is a text or picture file. 
+
 Step-4:Getting Files in  
 If it's an image, FileOutputStream
  is used to save the image data locally after it is 
@@ -349,6 +349,7 @@ IOExceptions. It makes sure that even in the event of a communication mistake
 with a client, the server keeps listening for new connections
  IOExceptions. It makes sure that even in the event of a communication mistake 
 with a client, the server keeps listening for new connections. 
+
 CONCLUSION: 
 In conclusion, bi-directional communication is made possible by the client-server 
 architecture, which enables the client to transmit files to the server and the server to 
