@@ -1,9 +1,5 @@
 # 🌟 Image & File Transfer App using Java Sockets
 
-<div align="center">
-  <img src="https://media.giphy.com/media/j3fdZ1QIhCpBlWUONw/giphy.gif" width="400" alt="File Transfer Animation">
-</div>
-
 ## 🚀 Project Showcase
 
 > **A seamless file transfer solution** that bridges client and server through Java's powerful socket programming
